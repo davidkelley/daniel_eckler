@@ -1,0 +1,22 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+/* TEAM */
+
+	Chef: David Kelley (Web Developer)
+	Contact: hello [at] davidkelley.me
+	Twitter: @davidkelley87
+	From: Liverpool, Merseyside, United Kingdom
+
+	Web Designer: Glen Michael
+	Site: www.moxycreative.com
+	Contact: glenn@moxycreative.com
+	From: Toronto, Canada
+
+/* SITE */
+
+    Doctype: HTML5
+    Standards: HTML5, CSS3
+    Language: English
+    Software: Sublime Text, Photoshop, TinyPNG
+    Components: jQuery, RequireJS, Modernizr
