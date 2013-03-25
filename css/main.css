@@ -3,20 +3,19 @@ button,
 input,
 select,
 textarea {
-    color: #222;
-    font-family:'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    color: #984645;
+    font-family:'Helvetica Neue', Arial, sans-serif;
 }
 
 html, body {
     -webkit-font-smoothing: antialiased;
     min-height:100%;
     height:100%;
-    overflow:hidden;
+    background:#f0eedf;
 }
 
 body {
     font-size:1em;
-    background: white;
 }
 
 html.touch, body, 
@@ -29,6 +28,14 @@ html, body, ul {
     padding:0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin:0;
+}
+
+p, ul {
+    font-family:'Melbourne', 'Helvetica Neue', Arial, sans-serif;
+}
+
 *, body, button, input, textarea, select {
     text-rendering: optimizeLegibility;
 }
@@ -38,6 +45,7 @@ ul {
 }
 
 a {
+    color:#582828;
     text-decoration: none;
     -webkit-transition: color 0.5s;
     -moz-transition: color 0.5s;
@@ -47,7 +55,7 @@ a {
 }
 
 a:hover {
-    color:#1A99AA;
+    color:#984645;
 }
 
 .table {
@@ -63,13 +71,52 @@ a:hover {
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #984645;
+    color:#f0eedf;
+    text-shadow: none;
+}
+
+::-webkit-selection {
+    background: #984645;
+    color:#f0eedf;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #984645;
+    color:#f0eedf;
     text-shadow: none;
+}
+
+.block-group {
+    text-align:center;
+    display:block;
+    margin:auto;
+    width:1100px;
+}
+
+.block-group > div {
+    text-align:left;
+    display:inline-block;
+    margin:0 auto;
+    vertical-align:top;
+    padding:0 40px;
+    -webkit-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.block-group.by-3 > div {
+    width:33%;
+}
+
+footer {
+    font-family:'Melbourne', 'Helvetica Neue', Arial, sans-serif;
+    padding:20px 0;
+    text-align:center;
+    font-size:0.8em;
 }
 
 hr {
@@ -95,240 +142,123 @@ textarea {
     resize: vertical;
 }
 
-.loader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #FFF;
-    z-index:10000;
+h1 {
+    margin-bottom:20px;
+    font-size:75.9525pt;
 }
 
-.loader .cell {
-    position:relative;
-    background:#FFF;
-    margin:auto;
-    width:785px;
-    height:77px;
-    text-align:center;
+h2 {
+    font-size:45pt;
 }
 
-.loader .cell:after {
-    content:'';
-    position:absolute;
-    width:80px;
-    height:96px;
-    background:url(../images/logo/small-grey.png) no-repeat center center;
-    top:10%;
-    left:50%;
-    margin-left:-40px;
-}
-
-.loading {
-    position:relative;
-    background:#AAA;
-    display:inline-block;
-}
-
-.loading .progress {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    max-width: 100%;
-    height: 100%;
-    background: #1A99AA;
-    z-index: 1;
-    -webkit-transition: width 0.5s ease-out;
-    -moz-transition: width 0.5s ease-out;
-    -o-transition: width 0.5s ease-out;
-    -ms-transition: width 0.5s ease-out;
-    transition: width 0.5s ease-out;
-}
-
-
-.loading img {
-    position:relative;
-    z-index:2;
+h4 {
+    color:#f0eedf;
+    font-size:22pt;
+    font-weight:normal;
+    font-family:'Melbourne', 'Helvetica Neue', Arial, sans-serif;
 }
 
 header {
-    position: fixed;
-    top: 0;
-    margin-top:-97px;
-    left: 0;
-    width: 100%;
-    padding-bottom:50px;
-    -webkit-transition: margin-top 0.5s ease-in-out;
-    -moz-transition: margin-top 0.5s ease-in-out;
-    -o-transition: margin-top 0.5s ease-in-out;
-    -ms-transition: margin-top 0.5s ease-in-out;
-    transition: margin-top 0.5s ease-in-out;
-    z-index:9000;
-}
-
-header .wrapper {
-    background: #FFF;
-    padding: 10px 70px;
-    border-bottom:solid 4px #1A99AA;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-html.touch body header,
-html.no-js body header,
-header:hover,
-html.header-visible header {
-    margin-top: 0px;
-}
-
-header .logo {
-    float:left;
-}
-
-header nav {
-    float:left;
-    margin-left:50px;
+    position:absolute;
+    top:20px;
+    left:75%;
 }
 
 header nav ul li {
-    float:left;
+    margin:3px 0;
 }
 
 header nav ul li a {
     display:block;
-    padding:0 15px;
-    font-size:0.96em;
-    text-transform:uppercase;
-    font-weight:400;
-    color:#8F8F8F;
-    line-height:77px;
+    padding-left:28px;
+    background:url(../images/menu.png) no-repeat;
 }
 
-#home {
-    height:100%;
-    background: url(../video/home/placeholder.png) no-repeat center center;
-    background-size:cover;
+header nav ul li a.work {
+    background-position: 0px -20px;
 }
 
-#home video {
-    width:100%;
-    display:none;
+header nav ul li a.connect {
+    background-position: 0px -39px;
+}   
+
+.torso.top {
+    height:834px;
+    background:url(../images/torso-top.png) no-repeat bottom center;
+    text-align:center;
 }
 
-html.no-video video {
-    display:none;
+.torso.bottom {
+    height:786px;
+    background:url(../images/torso-bottom.png) no-repeat bottom center;
 }
 
-@media screen and (orientation:landscape) and (min-aspect-ratio:16/9) {
-    #home video {
-        display:block;
-    }
-}
-
-#content {
+.torso.bottom h2 {
     position:relative;
-    height:100%;
+    padding-bottom:30px;
+    margin-bottom:29px;
 }
 
-.frames {
-    position:fixed;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    z-index:1000;
-}
-
-html.touch .frames,
-html.no-js .frames {
-    position:relative;
-}
-
-.frame {
-    height:0%;
-    width:100%;
+.torso.bottom h2:after {
+    content:'';
+    width:50px;
     position:absolute;
     bottom:0;
     left:0;
-    overflow:hidden;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position:center center;
-    -webkit-transition: height 1.2s;
-    -moz-transition: height 1.2s;
-    -o-transition: height 1.2s;
-    -ms-transition: height 1.2s;
-    transition: height 1.2s;
+    border-bottom:solid 1px #984645;
 }
 
-.frame .hero {
-    opacity:0;
+.torso.bottom p {
+    color:#984645;
+    font-size:11.25pt;
+    line-height:1.2;
+    margin-top:0;
+}
+
+.torso.bottom ul {
+    font-size:11.25pt;
+    line-height:1.2;
+    font-weight:bold;
+}
+
+.torso.bottom ul li a {
+    color:#984645;
+}
+
+.torso.bottom ul.connect {
+    font-weight:normal;
+}
+
+.torso.bottom ul.connect li a {
     display:block;
-    position: fixed;
-    margin-bottom: -50px;
-    width:80%;
-    left:10%;
-    bottom:-100%;
-    height: auto;
-    z-index:9000;
-    -webkit-transition: opacity 1.2s, bottom 1.2s;
-    -moz-transition: opacity 1.2s, bottom 1.2s;
-    -o-transition: opacity 1.2s, bottom 1.2s;
-    -ms-transition: opacity 1.2s, bottom 1.2s;
-    transition: opacity 1.2s, bottom 1.2s;
+    padding-left:22px;
+    background:url(../images/connect.png) no-repeat;
 }
 
-@media screen and (orientation:landscape) and (min-aspect-ratio:16/9) {
-   .frame .hero {
-        left: 25%;
-        width: 50%;
-    }
+.torso.bottom ul.connect li a.linkedin {
+    background-position: 0px -18px;
 }
 
-html.touch .frames .frame,
-html.no-js .frames .frame {
-    position:relative;
-    top:auto;
-    height:100%;
+.torso.bottom ul.connect li a.facebook {
+    background-position: 0px -36px;
 }
 
-html.touch .frame .hero,
-html.no-js .frame .hero {
-    opacity:1;
-    position:absolute;
-    bottom:0;
+.torso.bottom ul.connect li a.piccsy {
+    background-position: 0px -54px;
 }
 
-.frames .frame:first-child {
-    height:100%;
+.torso.bottom ul.connect li a.email {
+    background-position: 0px -72px;
 }
 
-.frames .frame {
-    background-color:#CCC;
+.torso.bottom ul.connect li a.phone {
+    background-position: 0px -89px;
 }
 
-.frames .frame:nth-child(odd) {
-    background-color:#DDD;
+.content {
+    background:#d6cac5;
+    height:500px;
 }
-
-#outfitr { background-image:url(../images/work/outfitr-background.png); }
-#emi { background-image:url(../images/work/emi-background.png); }
-#everton { background-image:url(../images/work/everton-background.png); }
-#piccsy { background-image:url(../images/work/piccsy-background.png); }
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Image replacement
- */
 
 .ir {
     background-color: transparent;
@@ -345,10 +275,6 @@ html.no-js .frame .hero {
     height: 150%;
 }
 
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-
 .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -360,11 +286,6 @@ html.no-js .frame .hero {
     width: 1px;
 }
 
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
     clip: auto;
@@ -375,50 +296,23 @@ html.no-js .frame .hero {
     width: auto;
 }
 
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
 .invisible {
     visibility: hidden;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    display: table; 
 }
 
 .clearfix:after {
     clear: both;
 }
 
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
 .clearfix {
     *zoom: 1;
 }
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   Theses examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
@@ -430,11 +324,6 @@ html.no-js .frame .hero {
        (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
 
 @media print {
     * {
@@ -456,10 +345,6 @@ html.no-js .frame .hero {
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
 
     .ir a:after,
     a[href^="javascript:"]:after,
@@ -502,3 +387,11 @@ html.no-js .frame .hero {
         page-break-after: avoid;
     }
 }
+
+@font-face {
+    font-family:"Melbourne";
+    src:url("fonts/Melbourne_reg.eot?") format("eot"),url("fonts/Melbourne_reg.woff") format("woff"),url("fonts/Melbourne_reg.ttf") format("truetype"),url("fonts/Melbourne_reg.svg#Melbourne") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+

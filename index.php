@@ -46,6 +46,81 @@
     </head>
     <body>
 
+        <header>
+            <nav>
+                <ul>
+                    <li><a class="home" href="#home">Home</a></li>
+                    <li><a class="work" href="#work">Work</a></li>
+                    <li><a class="connect" href="#connect">Connect</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <a name="home"></a>
+        <div class="torso top table">
+            <div class="cell">
+                <h1>Hi, I'm Daniel.</h1>
+                <h4>I'm an Interactive Strategist<br/>specializing in digital product development,<br/>
+                    creative direction and marketing.</h4>
+            </div>
+        </div>
+
+        <a name="work"></a>
+        <div class="content">
+
+        </div>
+
+        <a name="connect"></a>
+        <div class="torso bottom table">
+            <div class="cell">
+                <div class="block-group by-3">
+                    <div>
+                        <h2>Biography</h2>
+                        <p>
+                            Hi, I'm Daniel. I'm a serial entrepreneur and interactive strategist, specializing in digital product development, creative direction, editorial direction, and marketing.
+                        </p>
+                        <p>
+                            I've founded companies including Piccsy (an image discovery platform for creatives), EveryGuyed (a men's life/style blog network), and Moxy Creative (a boutique design agency).
+                        </p>
+                        <p>
+                            I'm currently working on Rememberum, a tool that empowers people to remember their loved ones with beautiful, dynamic online memorials. Please contact me via e-mail with ideas, opportunities, or anything else you'd like to discuss.
+                        </p>
+                    </div>
+                    <div>
+                        <h2>Features</h2>
+                        <ul>
+                            <li><a target="_blank" title="Wall Street Journal" href="http://online.wsj.com/article/SB10000872396390443720204578004953091338258.html">Wall Street Journal</a></li>
+                            <li><a target="_blank" title="Business Insider" href="http://www.businessinsider.com/pinterest-referral-traffic-chart-2012-2">Business Insider</a></li>
+                            <li>Vanity Fair</li>
+                            <li><a target="_blank" title="TechCrunch" href="http://techcrunch.com/2012/05/28/death-to-powerpoint-piccsy-rethinks-the-pitchdeck-gets-tons-of-pageviews/">TechCrunch</a></li>
+                            <li><a target="_blank" title="GQ" href="http://www.gq.com/style/blogs/the-gq-eye/2010/10/check-out-dress-the-part-movie-prints.html">GQ</a></li>
+                            <li><a target="_blank" title="Spike" href="http://www.spike.com/articles/0i2to7/hip-hop-stars-get-simpsonized">Spike</a></li>
+                            <li><a target="_blank" title="MTV" href="http://newsroom.mtv.com/2009/09/10/kanye-west-lil-wayne-eminem-the-simpsons/">MTV</a></li>
+                            <li><a target="_blank" title="MISC" href="http://www.danieleckler.com/misc-daniel-eckler.jpg">MISC</a></li>
+                            <li>Computer Arts</li>
+                            <li><a target="_blank" title="National Post" href="http://www.danieleckler.com/financial-post-daniel-eckler.jpg">National Post</a></li>
+                            <li><a target="_blank" title="Toronto Star" href="http://www.starbusinessclub.ca/money/articles-money/monetizing-the-web-torontos-piccsy-and-making-money-off-free-images/">Toronto Star</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Connect</h2>
+                        <ul class="connect">
+                            <li><a class="twitter" title="Twitter" href="">Twitter</a></li>
+                            <li><a class="linkedin" title="Linked In" href="">Linked In</a></li>
+                            <li><a class="facebook" title="Facebook" href="">Facebook</a></li>
+                            <li><a class="piccsy" title="Piccsy" href="">Piccsy</a></li>
+                            <li><a class="email" title="Email" href="">Email</a></li>
+                            <li><a class="phone" title="Phone" href="">Phone</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            Copyright 2013 Groundwave Media Group. All Rights Reserved. | Design by <a target="_blank" href="http://www.moxycreative.com">Glenn Michael</a> for <a target="_blank" href="http://www.moxycreative.com">Moxy Creative House</a> | Developed by <a target="_blank" href="http://davidkelley.me">David Kelley</a>
+        </footer>
+
         <script>
             var _gaq=[['_setAccount','XXXXXX'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
