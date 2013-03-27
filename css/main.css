@@ -88,11 +88,14 @@ a:hover {
     text-shadow: none;
 }
 
+.wrapper {
+    display:block;
+    width:1100px;
+    margin:auto;
+}
+
 .block-group {
     text-align:center;
-    display:block;
-    margin:auto;
-    width:1100px;
 }
 
 .block-group > div {
@@ -147,6 +150,10 @@ h1 {
     font-size:75.9525pt;
 }
 
+h1 a {
+    color:#984645;
+}
+
 h2 {
     font-size:45pt;
 }
@@ -159,9 +166,10 @@ h4 {
 }
 
 header {
-    position:absolute;
+    position:fixed;
     top:20px;
     left:75%;
+    z-index:10000;
 }
 
 header nav ul li {
@@ -193,13 +201,13 @@ header nav ul li a.connect {
     background:url(../images/torso-bottom.png) no-repeat bottom center;
 }
 
-.torso.bottom h2 {
+h2 {
     position:relative;
     padding-bottom:30px;
     margin-bottom:29px;
 }
 
-.torso.bottom h2:after {
+h2:after {
     content:'';
     width:50px;
     position:absolute;
@@ -257,8 +265,131 @@ header nav ul li a.connect {
 
 .content {
     background:#d6cac5;
-    height:500px;
+    color:#2e0605;
 }
+
+.content .work {
+    padding:50px 40px;
+    -webkit-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
+    position:relative;
+}
+
+.content .work .inner {
+    opacity:0;
+    -webkit-transition: opacity 1.2s 1s;
+    -moz-transition: opacity 1.2s 1s;
+    -o-transition: opacity 1.2s 1s;
+    -ms-transition: opacity 1.2s 1;
+    transition: opacity 1.2s 1s;
+}
+
+.content .work.loaded .inner {
+    opacity:1;
+}
+
+.content .work .progress {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    height: 10px;
+    margin-top: -9px;
+    border: solid 1px #2e0605;
+    opacity: 1;
+    -webkit-transition: opacity 1.2s ;
+    -moz-transition: opacity 1.2s;
+    -o-transition: opacity 1.2s;
+    -ms-transition: opacity 1.2s;
+    transition: opacity 1.2s;
+}
+
+
+.content .work.loaded .progress {
+    opacity:0;
+}
+
+.content .work .progress .percentage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background: #2e0605;
+    -webkit-transition: width 0.3s;
+    -moz-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    -ms-transition: width 0.3s;
+    transition: width 0.3s;
+}
+
+.content .work a.visit {
+    font-size:11.25pt;
+    display:block;
+    margin-top:40px;
+    font-family:'Melbourne', 'Helvetica Neue', Arial, sans-serif;
+    background:url(../images/visit.png) no-repeat center left;
+    padding-left:30px;
+    height:16px;
+    line-height:18px;
+}
+
+.content .work h2 {
+    font-size:55.5pt;
+    padding-bottom:40px;
+    margin-bottom:50px;
+}
+
+.content .work h2:after {
+    border-bottom: solid 1px #2e0605;
+}
+
+.content .work p.tags {
+    margin-top:40px;
+}
+
+.content .work p {
+    width:33%;
+    line-height:1.5;
+    font-size:11.25pt;
+}
+
+.content .work h2,
+.content .work p,
+.content .work a {
+    margin-left: -80px;
+    -webkit-transition: margin-left 0.8s ease-out 1.2s;
+    -moz-transition: margin-left 0.8s ease-out 1.2s;
+    -o-transition: margin-left 0.8s ease-out 1.2s;
+    -ms-transition: margin-left 0.8s ease-out 1.2s;
+    transition: margin-left 0.8s ease-out 1.2s;
+}
+
+.content .work.loaded h2,
+.content .work.loaded p,
+.content .work.loaded a {
+    margin-left:0;
+}
+
+.content .work .images {
+    float:right;
+    margin-right:-80px;
+    margin-top:-60px;
+    -webkit-transition: margin-right 0.8s ease-out 1.2s;
+    -moz-transition: margin-right 0.8s ease-out 1.2s;
+    -o-transition: margin-right 0.8s ease-out 1.2s;
+    -ms-transition: margin-right 0.8s ease-out 1.2s;
+    transition: margin-right 0.8s ease-out 1.2s;
+}
+
+.content .work.loaded .images {
+    margin-right:0;
+}
+
 
 .ir {
     background-color: transparent;

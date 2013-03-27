@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+<works>
+	<work>
+		<title>Piccsy</title>
+		<image_path>images/work/piccsy/</image_path>
+		<description><![CDATA[
+			Piccsy is an image discovery network for creative professionals. We launched the site in late 2010 and quickly grew to attracting over three and a half million visitors per month. 
+
+			Piccsy has been through three iterations, shown sequentially here -- with the latest & current version displayed first.
+		]]></description>
+		<keywords>// Brand+Product Development // Creative Direction // Marketing</keywords>
+		<link>http://www.piccsy.com</link>
+	</work>
+	<work>
+		<title>Piccsy Playground</title>
+		<image_path>images/work/piccsy-playground/</image_path>
+		<description><![CDATA[
+			Piccsy Playground is a series of labs projects we created to experiment with product development, design, and web technologies, while simultaneously promoting Piccsy to creative professionals.
+
+Selected works are shown here, with the Piccsy Pitchdeck & Recite (also Playground projects) displayed below.
+		]]></description>
+		<keywords>// Creative Direction // Marketing</keywords>
+		<link>http://www.piccsy.com/everything-design</link>
+	</work>
+	<work>
+		<title>Piccsy Pitchdeck</title>
+		<image_path>images/work/piccsy-pitchdeck/</image_path>
+		<description><![CDATA[
+			After deciding to seek investment in the summer of 2012, we created an interactive & animated pitch-deck for Piccsy.
+
+The deck got significant online attention--most notably from Techcrunch who announced "Death to Powerpoint! Piccsy Rethinks the Pitchdeck"--and resulted in over 50 meetings with the top venture capitalists in North America.
+		]]></description>
+		<keywords>// Creative Direction // Marketing</keywords>
+		<link>http://www.piccsy.com/investors</link>
+	</work>
+	<work>
+		<title>Recite</title>
+		<image_path>images/work/recite/</image_path>
+		<description><![CDATA[
+			Realizing a trend in the proliferation of "visual quotes" on Piccsy and throughout the web, we quickly responded by creating Recite -- a web product that includes over 50 beautiful & dynamic typographic templates enabling users to "turn a quote into a masterpiece" in seconds.
+		]]></description>
+		<keywords>// Product Development // Creative Direction // Marketing</keywords>
+		<link>http://www.recitethis.com</link>
+	</work>
+	<work>
+		<title>Rememberum</title>
+		<image_path>images/work/rememberum/</image_path>
+		<description><![CDATA[
+			Rememberum empowers people to seamlessly create beautiful, permanent online memorials to celebrate their loved ones. Memorials are shared with friends and family, who can in-turn share memories, photos, and videos to help create a lasting legacy that can be updated at any time.
+
+We launched the produce with a microsite tribute to Steve Jobs, designed in the classic Mac OS GUI. 
+		]]></description>
+		<keywords>// Brand+Product Development // Creative Direction // Marketing</keywords>
+		<link>http://www.rememberum.com</link>
+	</work>
+	<work>
+		<title>EveryGuyed</title>
+		<image_path>images/work/everyguyed/</image_path>
+		<description><![CDATA[
+			EveryGuyed is a men's lifestyle network consisting of over 10 blogs, primarily in the mens fashion category. We sold the site in 2011, after growing it to over five million visitors per year.
+
+In addition to the websites & promotional materials, we also produced a t-shirt collection, plush toy mascot, and event series.
+		]]></description>
+		<keywords>// Brand Development // Editorial Direction // Creative Direction </keywords>
+		<link>http://www.everyguyed.com</link>
+	</work>
+	<work>
+		<title>Revolver</title>
+		<image_path>images/work/revolver/</image_path>
+		<description><![CDATA[
+			Revolver is a men's lifestyle website, curating the best videos from across the web for men with discerning taste in culture. 
+		]]></description>
+		<keywords>// Brand Development // Editorial Direction // Creative Direction</keywords>
+		<link>http://www.gorevolver.com</link>
+	</work>
+	<work>
+		<title>Moxy Creative</title>
+		<image_path>images/work/moxy-creative/</image_path>
+		<description><![CDATA[
+			Moxy Creative is a boutique design firm, and previously the in-house creative agency of EveryGuyed. 
+
+While managing EveryGuyed, we developed a variety of promotional print series targeting creative-oriented men, which resulted in significant press from outlets including: Computer Arts, GQ, MTV, Spike, Vanity Fair, and Vibe.
+		]]></description>
+		<keywords>// Brand Development // Creative Direction // Marketing</keywords>
+		<link>http://www.moxycreative.com</link>
+	</work>
+	<work>
+		<title>JR Mint</title>
+		<image_path>images/work/jr-mint/</image_path>
+		<description><![CDATA[
+			JR Mint needed a unique way to release an album, so we conceptualized an interactive microsite that highlights individual songs & lyrics with icon-based illustrations.
+
+Also shown here are promotional materials and album+mixtape covers.
+		]]></description>
+		<keywords>// Brand Development // Creative Direction // Marketing</keywords>
+		<link>http://www.planetminty.com/goldenticket</link>
+	</work>
+	<work>
+		<title>Vizualize.Me</title>
+		<image_path>images/work/visualize-me/</image_path>
+		<description><![CDATA[
+			Vizualize.Me enables users to visualize their LinkedIn resume in an beautiful infographic within seconds. 
+
+Winner of Start Up Weekend Toronto 2011.
+		]]></description>
+		<keywords>// Brand Development // Creative Direction // Marketing</keywords>
+		<link>http://www.vizualize.me</link>
+	</work>
+	<work>
+		<title>Torso: T-Shirt Graphics Exposed</title>
+		<image_path>images/work/torso/</image_path>
+		<description><![CDATA[
+			Torso is a coffee table booked--published by Gestalten--that features the world's most interesting graphic t-shirts.
+
+Available for purchase on Amazon.
+		]]></description>
+		<keywords>// Editorial Direction // Creative Direction</keywords>
+		<link>http://www.amazon.com/Torso-Streetwear-T-Shirt-Graphics-Exposed</link>
+	</work>
+</works>

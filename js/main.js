@@ -31,10 +31,6 @@ requirejs.config({
      * Module variables
      */
     config: {
-        scroller: {
-            container: '.frames',
-            imageSelector: '.hero'
-        }
 	},
     
     shim: {
@@ -63,14 +59,24 @@ requirejs.config({
 require(['components/modernizr']);
 
 //init loading module
-require(['loader', 'jquery', 'scroller'], function(Loader, $) {
-	var loader = new Loader(document.body, function() {
-        $('.loader', this.container).fadeOut(800, function() {
-            require(['header'], function(header) {
-                header.show();
-            })
-        });
-    });
+require(['loader', 'jquery'], function(Loader, $) {
+    var loaders = [];
+	$('.work').each(function() { loaders.push(new Loader(this)); });
+});
+
+require(['helpers/binder','jquery'], function(Binder, $) {
+    new Binder({
+        '.slide-to': {
+            click: [
+                function(e) {
+                    e.preventDefault();
+                    var href = $(this).attr('href').slice(1);
+                    var top = $('a[name="'+href+'"]').offset().top;
+                    $('html,body').animate({scrollTop: top}, 1500);
+                }
+            ]
+        }
+    })
 });
 
 /**

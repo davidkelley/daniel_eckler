@@ -22,7 +22,8 @@
 		<meta name="msapplication-TileImage" content="apple-touch-icon-114x114-precomposed.png">
 		<meta name="msapplication-TileColor" content="#ffffff">
 		
-		<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+		<link rel="icon" href="favicon.png"/>
+        <link rel="shortcut icon" href="favicon.png"/>
 		<link rel="fluid-icon" href="apple-touch-icon-114x114-precomposed.png" title="<?= $meta['title']; ?>" />
 		<link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57-precomposed.png" />
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png" />
@@ -49,9 +50,9 @@
         <header>
             <nav>
                 <ul>
-                    <li><a class="home" href="#home">Home</a></li>
-                    <li><a class="work" href="#work">Work</a></li>
-                    <li><a class="connect" href="#connect">Connect</a></li>
+                    <li><a class="home slide-to" href="#home">Home</a></li>
+                    <li><a class="work slide-to" href="#work">Work</a></li>
+                    <li><a class="connect slide-to" href="#connect">Connect</a></li>
                 </ul>
             </nav>
         </header>
@@ -59,7 +60,7 @@
         <a name="home"></a>
         <div class="torso top table">
             <div class="cell">
-                <h1>Hi, I'm Daniel.</h1>
+                <h1>Hi, I'm <a rel="author" target="_blank" href="http://plus.google.com/116682852560364971555/about?rel=author">Daniel</a>.</h1>
                 <h4>I'm an Interactive Strategist<br/>specializing in digital product development,<br/>
                     creative direction and marketing.</h4>
             </div>
@@ -67,13 +68,35 @@
 
         <a name="work"></a>
         <div class="content">
+            <div class="work wrapper">
+                <div class="progress"><div class="percentage"></div></div>
+                <div class="inner clearfix">
+                    <h2>Everything Design</h2>
+                    <div class="images">
+                        <div class="arrow"></div>
+                        <div class="container">
+                            <img src="images/work/piccsy/1.jpg" />
+                        </div>
+                    </div>
+                    <p>
+                        Piccsy is an image discovery network for creative professionals. We launched the site in late 2010 and quickly grew to attracting over three and a half million visitors per month. 
+                    </p>
+                    <p>
+                        Piccsy has been through three iterations, shown sequentially here -- with the latest &amp; current version displayed first.
+                    </p>
+                    <p class="tags">
+                        // Brand + Product Development // Creative Direction // Marketing
+                    </p>
+                    <a class="visit" target="_blank" title="Launch Site" href="http://www.piccsy.com">Launch Site</a>
 
+                </div>
+            </div>
         </div>
 
         <a name="connect"></a>
         <div class="torso bottom table">
             <div class="cell">
-                <div class="block-group by-3">
+                <div class="wrapper block-group by-3">
                     <div>
                         <h2>Biography</h2>
                         <p>
@@ -85,6 +108,7 @@
                         <p>
                             I'm currently working on Rememberum, a tool that empowers people to remember their loved ones with beautiful, dynamic online memorials. Please contact me via e-mail with ideas, opportunities, or anything else you'd like to discuss.
                         </p>
+
                     </div>
                     <div>
                         <h2>Features</h2>
