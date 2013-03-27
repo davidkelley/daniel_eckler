@@ -91,6 +91,9 @@
                         <div class="frame" data-event="click" data-action="slider/goto"><img src="images/work/piccsy/2.jpg" /></div>
                         <div class="frame" data-event="click" data-action="slider/goto"><img src="images/work/piccsy/3.jpg" /></div>
                         <div class="frame" data-event="click" data-action="slider/goto"><img src="images/work/piccsy/4.jpg" /></div>
+                        <div class="frame" data-event="click" data-action="slider/goto"><img src="images/work/piccsy/5.jpg" /></div>
+                        <div class="frame" data-event="click" data-action="slider/goto"><img src="images/work/piccsy/6.jpg" /></div>
+                        <div class="frame" data-event="click" data-action="slider/goto"><img src="images/work/piccsy/7.jpg" /></div>
                     </div>
                 </div>
             </div>
