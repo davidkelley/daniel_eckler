@@ -342,6 +342,7 @@ h2:after {
     margin-top: -9px;
     border: solid 1px #2e0605;
     opacity: 1;
+    overflow:hidden;
     -webkit-transition: opacity 1.2s ;
     -moz-transition: opacity 1.2s;
     -o-transition: opacity 1.2s;
