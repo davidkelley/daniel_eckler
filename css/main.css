@@ -213,7 +213,7 @@ header nav ul li a.connect:before  {
 
 .torso.bottom {
     height:786px;
-    background:url(../images/torso-bottom.png) no-repeat bottom center;
+    background:url(../images/torso-bottom.png) no-repeat top center;
 }
 
 h2 {
