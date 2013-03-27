@@ -67,23 +67,17 @@ define(['jquery', 'module', 'helpers/binder'], function($, module, Binder) {
 		m.goto($(this).children('.active'));
 	});
 
-	var tID = null;
-
 	var binds = {
 		'.right.arrow': {
 			mouseenter: [
 				function() {
-					clearTimeout(tID);
 					$(this).siblings('.frames').addClass('tease');
 				}
 			],
 
 			mouseleave: [
 				function() {
-					var that = this;
-					tID = setTimeout(function() {
-						$(that).siblings('.frames').removeClass('tease');
-					}, 1000);
+					$(this).siblings('.frames').removeClass('tease');
 				}
 			]
 		}
