@@ -34,7 +34,7 @@ define(['jquery', 'module', 'helpers/binder'], function($, module, Binder) {
 			var frames = frame.children();
 
 			if ( ! $(frames).first().hasClass('active')) {
-				$(frame).addClass('transitioned');
+				$(frame).addClass('transitioned').removeClass('tease');
 				$(frame).parent().addClass('transitioned');
 			} else {
 				$(frame).removeClass('transitioned');
@@ -67,7 +67,7 @@ define(['jquery', 'module', 'helpers/binder'], function($, module, Binder) {
 		m.goto($(this).children('.active'));
 	});
 
-	/*var tID = null;
+	var tID = null;
 
 	var binds = {
 		'.right.arrow': {
@@ -85,18 +85,11 @@ define(['jquery', 'module', 'helpers/binder'], function($, module, Binder) {
 						$(that).siblings('.frames').removeClass('tease');
 					}, 1000);
 				}
-			],
-
-			click: [
-				function() {
-					var active = $(this).siblings('.frames').children('.active');
-					m.goto(active.next());
-				}
 			]
 		}
 	};
 
-	var binder = new Binder(binds);*/
+	var binder = new Binder(binds);
 
 	return m;
 })
