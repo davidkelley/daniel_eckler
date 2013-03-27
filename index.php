@@ -66,29 +66,32 @@
             </div>
         </div>
 
+        <script type="text/javascript">var _a = _a || []; _a.push(['slider','run']);</script>
         <a name="work"></a>
         <div class="content">
-            <div class="work wrapper">
+            <div class="work">
                 <div class="progress"><div class="percentage"></div></div>
                 <div class="inner clearfix">
-                    <h2>Everything Design</h2>
-                    <div class="images">
-                        <div class="arrow"></div>
-                        <div class="container">
-                            <img src="images/work/piccsy/1.jpg" />
+                    <div data-event="click" data-action="slider/gotoNext" class="right arrow"></div>
+                    <div class="frames">
+                        <div class="home frame active" data-event="click" data-action="slider/goto">
+                            <h2>Everything Design</h2>
+                            <img class="home-image" src="images/work/piccsy/1.jpg" />
+                            <p>
+                                Piccsy is an image discovery network for creative professionals. We launched the site in late 2010 and quickly grew to attracting over three and a half million visitors per month. 
+                            </p>
+                            <p>
+                                Piccsy has been through three iterations, shown sequentially here -- with the latest &amp; current version displayed first.
+                            </p>
+                            <p class="tags">
+                                // Brand + Product Development // Creative Direction // Marketing
+                            </p>
+                            <a class="visit" target="_blank" title="Launch Site" href="http://www.piccsy.com">Launch Site</a>
                         </div>
+                        <div class="frame" data-event="click" data-action="slider/goto"><img src="images/work/piccsy/2.jpg" /></div>
+                        <div class="frame" data-event="click" data-action="slider/goto"><img src="images/work/piccsy/3.jpg" /></div>
+                        <div class="frame" data-event="click" data-action="slider/goto"><img src="images/work/piccsy/4.jpg" /></div>
                     </div>
-                    <p>
-                        Piccsy is an image discovery network for creative professionals. We launched the site in late 2010 and quickly grew to attracting over three and a half million visitors per month. 
-                    </p>
-                    <p>
-                        Piccsy has been through three iterations, shown sequentially here -- with the latest &amp; current version displayed first.
-                    </p>
-                    <p class="tags">
-                        // Brand + Product Development // Creative Direction // Marketing
-                    </p>
-                    <a class="visit" target="_blank" title="Launch Site" href="http://www.piccsy.com">Launch Site</a>
-
                 </div>
             </div>
         </div>

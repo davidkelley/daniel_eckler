@@ -31,6 +31,9 @@ requirejs.config({
      * Module variables
      */
     config: {
+        slider: {
+            selector: '.frames'
+        }
 	},
     
     shim: {
@@ -64,8 +67,11 @@ require(['loader', 'jquery'], function(Loader, $) {
 	$('.work').each(function() { loaders.push(new Loader(this)); });
 });
 
-require(['helpers/binder','jquery'], function(Binder, $) {
+require(['helpers/binder','jquery', 'helpers/handler'], function(Binder, $, handler) {
     new Binder({
+        '[data-event="click"]': {
+            click: [ function(e) { handler(e, this); } ],
+        },
         '.slide-to': {
             click: [
                 function(e) {
