@@ -67,17 +67,28 @@ define(['jquery', 'module', 'helpers/binder'], function($, module, Binder) {
 		m.goto($(this).children('.active'));
 	});
 
+	var tIDl = null, tIDe = null;
+
 	var binds = {
 		'.right.arrow': {
 			mouseenter: [
 				function() {
-					$(this).siblings('.frames').addClass('tease');
+					clearTimeout(tIDl);
+					var that = this;
+					tIDe = setTimeout(function() {
+						$(that).siblings('.frames').addClass('tease');
+					}, 100);
+					//$(this).siblings('.frames').addClass('tease');
 				}
 			],
 
 			mouseleave: [
 				function() {
-					$(this).siblings('.frames').removeClass('tease');
+					clearTimeout(tIDe);
+					var that = this;
+					tIDl = setTimeout(function() {
+						$(that).siblings('.frames').removeClass('tease');
+					}, 100);
 				}
 			]
 		}
