@@ -296,11 +296,11 @@ h2:after {
 .content .work .inner {
     opacity:0;
     height:100%;
-    -webkit-transition: opacity 1.2s 1s;
-    -moz-transition: opacity 1.2s 1s;
-    -o-transition: opacity 1.2s 1s;
-    -ms-transition: opacity 1.2s 1s;
-    transition: opacity 1.2s 1s;
+    -webkit-transition: opacity 1.2s 0.7s;
+    -moz-transition: opacity 1.2s 0.7s;
+    -o-transition: opacity 1.2s 0.7s;
+    -ms-transition: opacity 1.2s 0.7s;
+    transition: opacity 1.2s 0.7s;
 }
 
 .content .work .inner .right.arrow {
@@ -403,11 +403,11 @@ h2:after {
 .content .work p,
 .content .work a {
     margin-left: -80px;
-    -webkit-transition: margin-left 0.8s ease-out 1.2s, opacity 0.5s;
-    -moz-transition: margin-left 0.8s ease-out 1.2s, opacity 0.5s;
-    -o-transition: margin-left 0.8s ease-out 1.2s, opacity 0.5s;
-    -ms-transition: margin-left 0.8s ease-out 1.2s, opacity 0.5s;
-    transition: margin-left 0.8s ease-out 1.2s, opacity 0.5s;
+    -webkit-transition: margin-left 0.8s ease-out 0.8s, opacity 0.5s;
+    -moz-transition: margin-left 0.8s ease-out 0.8s, opacity 0.5s;
+    -o-transition: margin-left 0.8s ease-out 0.8s, opacity 0.5s;
+    -ms-transition: margin-left 0.8s ease-out 0.8s, opacity 0.5s;
+    transition: margin-left 0.8s ease-out 0.8s, opacity 0.5s;
 }
 
 .content .work .frames.transitioned .home h2,
@@ -434,11 +434,11 @@ h2:after {
     float:right;
     margin-right:-80px;
     margin-top:-60px;
-    -webkit-transition: margin-right 0.8s ease-out 1.2s;
-    -moz-transition: margin-right 0.8s ease-out 1.2s;
-    -o-transition: margin-right 0.8s ease-out 1.2s;
-    -ms-transition: margin-right 0.8s ease-out 1.2s;
-    transition: margin-right 0.8s ease-out 1.2s;
+    -webkit-transition: margin-right 0.8s ease-out 0.8s;
+    -moz-transition: margin-right 0.8s ease-out 0.8s;
+    -o-transition: margin-right 0.8s ease-out 0.8s;
+    -ms-transition: margin-right 0.8s ease-out 0.8s;
+    transition: margin-right 0.8s ease-out 0.8s;
 }
 
 .content .work.loaded .home-image {
