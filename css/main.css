@@ -516,6 +516,20 @@ h2:after {
     -o-transition: margin-left 1.5s, left 1.5s, opacity 0.6s;
     -ms-transition: margin-left 1.5s, left 1.5s, opacity 0.6s;
     transition: margin-left 1.5s, left 1.5s, opacity 0.6s;
+    -webkit-transition-delay: 1s;
+    -moz-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    -ms-transition-delay: 1s;
+    transition-delay: 1s;
+}
+
+.content .work .inner .right.arrow:hover + .frames .frame,
+.content .work .frames.transitioned .frame {
+    -webkit-transition-delay: 0s;
+    -moz-transition-delay: 0s;
+    -o-transition-delay: 0s;
+    -ms-transition-delay: 0s;
+    transition-delay: 0s;
 }
 
 html .content .work .frames .home.frame {

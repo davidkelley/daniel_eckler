@@ -1,5 +1,6 @@
 define(['jquery', 'module', 'helpers/binder'], function($, module, Binder) {
 	var config = module.config();
+
 	var containers = $(config.selector);
 
 	var m = {
@@ -35,12 +36,14 @@ define(['jquery', 'module', 'helpers/binder'], function($, module, Binder) {
 			if ( ! $(frames).first().hasClass('active')) {
 				$(frame).addClass('transitioned');
 				$(frame).parent().addClass('transitioned');
-			} else {
-				$(frame).removeClass('transitioned');
-				$(frame).parent().removeClass('transitioned');
 			}
 
 			frames.each(this.each);
+
+			if ($(frames).first().hasClass('active')) {
+				$(frame).removeClass('transitioned');
+				$(frame).parent().removeClass('transitioned');
+			}
 		},
 
 		each: function(i) {

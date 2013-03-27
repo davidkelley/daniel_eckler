@@ -77,6 +77,7 @@
         <a name="work"></a>
         <div class="content">
 
+            <? $n = 0; ?>
             <? foreach($xml->work as $work): ?>
             <? $images = glob($work->image_path . '*.jpg'); ?>
             <div class="work">
@@ -101,6 +102,8 @@
                     </div>
                 </div>
             </div>
+            <? $n++; ?>
+            <? if ($n > 6) break; ?>
             <? endforeach; ?>
 
 
