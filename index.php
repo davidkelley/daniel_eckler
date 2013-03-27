@@ -154,7 +154,7 @@
         </div>
 
         <footer>
-            Copyright 2013 Groundwave Media Group. All Rights Reserved. | Design by <a target="_blank" href="http://www.moxycreative.com">Glenn Michael</a> for <a target="_blank" href="http://www.moxycreative.com">Moxy Creative House</a> | Developed by <a target="_blank" href="http://davidkelley.me">David Kelley</a>
+            Copyright 2013 Groundwave Media Group. All Rights Reserved. | Design by <a target="_blank" href="http://www.moxycreative.com">Glenn Michael</a> for <a target="_blank" href="http://www.moxycreative.com">Moxy Creative House</a>
         </footer>
 
         <script>
