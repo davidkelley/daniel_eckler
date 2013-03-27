@@ -87,12 +87,8 @@
                         <div class="home frame active" data-event="click" data-action="slider/goto">
                             <h2><?= $work->title; ?></h2>
                             <img class="home-image" src="<?= $work->image_path ?>1.jpg" />
-                            <p>
-                                <?= nl2br($work->description) ?>
-                            </p>
-                            <p class="tags">
-                                <?= $work->keywords ?>
-                            </p>
+                            <p><?= nl2br($work->description) ?></p>
+                            <p class="tags"><?= $work->keywords ?></p>
                             <a class="visit" target="_blank" title="Launch Site" href="<?= $work->link ?>">Launch Site</a>
                         </div>
                         <div class="frame" data-event="click" data-action="slider/goto"><img src="<?= $work->image_path ?>2.jpg" /></div>
@@ -103,7 +99,7 @@
                 </div>
             </div>
             <? $n++; ?>
-            <? if ($n > 6) break; ?>
+            <? if ($n > 4) break; ?>
             <? endforeach; ?>
 
 

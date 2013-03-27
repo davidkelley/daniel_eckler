@@ -524,6 +524,7 @@ h2:after {
 }
 
 .content .work .inner .right.arrow:hover + .frames .frame,
+.content .work .frames .home.frame.active,
 .content .work .frames.transitioned .frame {
     -webkit-transition-delay: 0s;
     -moz-transition-delay: 0s;

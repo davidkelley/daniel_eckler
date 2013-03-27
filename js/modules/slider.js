@@ -36,14 +36,12 @@ define(['jquery', 'module', 'helpers/binder'], function($, module, Binder) {
 			if ( ! $(frames).first().hasClass('active')) {
 				$(frame).addClass('transitioned');
 				$(frame).parent().addClass('transitioned');
-			}
-
-			frames.each(this.each);
-
-			if ($(frames).first().hasClass('active')) {
+			} else {
 				$(frame).removeClass('transitioned');
 				$(frame).parent().removeClass('transitioned');
 			}
+
+			frames.each(this.each);
 		},
 
 		each: function(i) {
