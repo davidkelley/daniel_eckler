@@ -1,4 +1,11 @@
 <? include 'config.php'; ?>
+<?
+    if (file_exists('data.xml')) {
+        $xml = simplexml_load_file('data.xml');
+    } else {
+        die("Could not load data.");
+    }
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -69,34 +76,34 @@
         <script type="text/javascript">var _a = _a || []; _a.push(['slider','run']);</script>
         <a name="work"></a>
         <div class="content">
+
+            <? foreach($xml->work as $work): ?>
+            <? $images = glob($work->image_path . '*.jpg'); ?>
             <div class="work">
-                <div class="progress"><div class="percentage"></div></div>
                 <div class="inner clearfix">
                     <div data-event="click" data-action="slider/gotoNext" class="right arrow"></div>
                     <div class="frames">
                         <div class="home frame active" data-event="click" data-action="slider/goto">
-                            <h2>Everything Design</h2>
-                            <img class="home-image" src="images/work/piccsy/1.jpg" />
+                            <h2><?= $work->title; ?></h2>
+                            <img class="home-image" src="<?= $work->image_path ?>1.jpg" />
                             <p>
-                                Piccsy is an image discovery network for creative professionals. We launched the site in late 2010 and quickly grew to attracting over three and a half million visitors per month. 
-                            </p>
-                            <p>
-                                Piccsy has been through three iterations, shown sequentially here -- with the latest &amp; current version displayed first.
+                                <?= nl2br($work->description) ?>
                             </p>
                             <p class="tags">
-                                // Brand + Product Development // Creative Direction // Marketing
+                                <?= $work->keywords ?>
                             </p>
-                            <a class="visit" target="_blank" title="Launch Site" href="http://www.piccsy.com">Launch Site</a>
+                            <a class="visit" target="_blank" title="Launch Site" href="<?= $work->link ?>">Launch Site</a>
                         </div>
-                        <div class="frame" data-event="click" data-action="slider/goto"><img src="images/work/piccsy/2.jpg" /></div>
-                        <div class="frame" data-event="click" data-action="slider/goto"><img src="images/work/piccsy/3.jpg" /></div>
-                        <div class="frame" data-event="click" data-action="slider/goto"><img src="images/work/piccsy/4.jpg" /></div>
-                        <div class="frame" data-event="click" data-action="slider/goto"><img src="images/work/piccsy/5.jpg" /></div>
-                        <div class="frame" data-event="click" data-action="slider/goto"><img src="images/work/piccsy/6.jpg" /></div>
-                        <div class="frame" data-event="click" data-action="slider/goto"><img src="images/work/piccsy/7.jpg" /></div>
+                        <div class="frame" data-event="click" data-action="slider/goto"><img src="<?= $work->image_path ?>2.jpg" /></div>
+                        <? for($i=2;$i<count($images);$i++): ?>
+                        <div class="frame" data-event="click" data-action="slider/goto"><img rel="<?= $images[$i]; ?>" /></div>
+                        <? endfor; ?>
                     </div>
                 </div>
             </div>
+            <? endforeach; ?>
+
+
         </div>
 
         <a name="connect"></a>

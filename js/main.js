@@ -62,9 +62,21 @@ requirejs.config({
 require(['components/modernizr']);
 
 //init loading module
-require(['loader', 'jquery'], function(Loader, $) {
-    var loaders = [];
-	$('.work').each(function() { loaders.push(new Loader(this)); });
+require(['jquery'], function($) {
+    $(window).load(function() {
+
+        $('.work').addClass('loaded');
+
+        $('.frame img').each(function() {
+            var img = $(this);
+            var src = img.attr('src');
+            var rel = img.attr('rel');
+
+            if (src == "" || src === void 0) {
+                img.attr('src', rel);
+            }
+        });
+    });
 });
 
 require(['helpers/binder','jquery', 'helpers/handler'], function(Binder, $, handler) {
@@ -79,6 +91,26 @@ require(['helpers/binder','jquery', 'helpers/handler'], function(Binder, $, hand
                     var href = $(this).attr('href').slice(1);
                     var top = $('a[name="'+href+'"]').offset().top;
                     $('html,body').animate({scrollTop: top}, 1500);
+                }
+            ]
+        },
+
+        window: {
+            scroll: [
+                function() {
+                    var st = $(window).scrollTop();
+
+                    $('.work').each(function() {
+                        var top = $(this).offset().top;
+                        var h = $(this).height();
+                        var offset = h/6;
+
+                        if (st >= top+offset && st < top+h) {
+                            $(this).addClass('over');
+                        } else {
+                            $(this).removeClass('over');
+                        }
+                    });
                 }
             ]
         }

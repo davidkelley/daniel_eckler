@@ -279,8 +279,7 @@ h2:after {
 }
 
 .content {
-    background:#d6cac5;
-    color:#2e0605;
+    
 }
 
 .content .work {
@@ -291,16 +290,23 @@ h2:after {
     box-sizing:border-box;
     position:relative;
     height:680px;
+    background: #d6cac5;
+    color:#2e0605;
+}
+
+.content .work:nth-child(even) {
+    background:#f0eedf;
+    color:#984645;
 }
 
 .content .work .inner {
     opacity:0;
     height:100%;
-    -webkit-transition: opacity 1.2s 0.7s;
-    -moz-transition: opacity 1.2s 0.7s;
-    -o-transition: opacity 1.2s 0.7s;
-    -ms-transition: opacity 1.2s 0.7s;
-    transition: opacity 1.2s 0.7s;
+    -webkit-transition: opacity 1.2s;
+    -moz-transition: opacity 1.2s;
+    -o-transition: opacity 1.2s;
+    -ms-transition: opacity 1.2s;
+    transition: opacity 1.2s;
 }
 
 .content .work .inner .right.arrow {
@@ -319,6 +325,12 @@ h2:after {
     transition: margin-left 1.2s, opacity 0.3s;
 }
 
+.content .work:nth-child(even) .right.arrow:before,
+.content .work:nth-child(even) .right.arrow:after {
+    border-left-color: #984645 !important;
+}
+
+.content .work.over .inner .right.arrow,
 .content .work .inner.transitioned .right.arrow {
     opacity:0;
     pointer-events:none;
@@ -372,12 +384,42 @@ h2:after {
 .content .work a.visit {
     font-size:11.25pt;
     display:block;
+    position:relative;
     margin-top:40px;
     font-family:'Melbourne', 'Helvetica Neue', Arial, sans-serif;
-    background:url(../images/visit.png) no-repeat center left;
     padding-left:30px;
     height:16px;
     line-height:18px;
+}
+
+.content .work:nth-child(odd) a.visit {
+    color:#2e0605 !important;
+}
+
+.content .work:nth-child(even) a.visit {
+    color:#984645 !important;
+}
+
+.content .work a.visit:before {
+    position:absolute;
+    top:-3px;
+    left:0;
+    content:'';
+    width:30px;
+    height:30px;
+    background:url(../images/launch-site.svg) no-repeat 0px 0px;
+}
+
+.content .work:nth-child(even) a.visit:before {
+    background-image:url(../images/launch-site-alt.svg);
+}
+
+.content .work a.visit:hover {
+    color:#2e0605;
+}
+
+.content .work a.visit:hover:before {
+    background-position:-27px 0px;
 }
 
 .content .work h2 {
@@ -386,7 +428,7 @@ h2:after {
     margin-bottom:50px;
 }
 
-.content .work h2:after {
+.content .work:nth-child(odd) h2:after {
     border-bottom: solid 1px #2e0605;
 }
 
@@ -404,11 +446,11 @@ h2:after {
 .content .work p,
 .content .work a {
     margin-left: -80px;
-    -webkit-transition: margin-left 0.8s ease-out 0.8s, opacity 0.5s;
-    -moz-transition: margin-left 0.8s ease-out 0.8s, opacity 0.5s;
-    -o-transition: margin-left 0.8s ease-out 0.8s, opacity 0.5s;
-    -ms-transition: margin-left 0.8s ease-out 0.8s, opacity 0.5s;
-    transition: margin-left 0.8s ease-out 0.8s, opacity 0.5s;
+    -webkit-transition: margin-left 0.8s ease-out, opacity 0.5s;
+    -moz-transition: margin-left 0.8s ease-out, opacity 0.5s;
+    -o-transition: margin-left 0.8s ease-out, opacity 0.5s;
+    -ms-transition: margin-left 0.8s ease-out, opacity 0.5s;
+    transition: margin-left 0.8s ease-out, opacity 0.5s;
 }
 
 .content .work .frames.transitioned .home h2,
@@ -435,11 +477,11 @@ h2:after {
     float:right;
     margin-right:-80px;
     margin-top:-60px;
-    -webkit-transition: margin-right 0.8s ease-out 0.8s;
-    -moz-transition: margin-right 0.8s ease-out 0.8s;
-    -o-transition: margin-right 0.8s ease-out 0.8s;
-    -ms-transition: margin-right 0.8s ease-out 0.8s;
-    transition: margin-right 0.8s ease-out 0.8s;
+    -webkit-transition: margin-right 0.8s ease-out;
+    -moz-transition: margin-right 0.8s ease-out;
+    -o-transition: margin-right 0.8s ease-out;
+    -ms-transition: margin-right 0.8s ease-out;
+    transition: margin-right 0.8s ease-out;
 }
 
 .content .work.loaded .home-image {
@@ -484,16 +526,16 @@ html .content .work .frames .home.frame {
 }
 
 .content .work .frames.transitioned .home.frame {
-    margin-left:-800px;
+    margin-left:-950px;
 }
 
 .content .work .frames.transitioned .frame {
     opacity:0.5;
-    margin-left:-470px;
+    margin-left:-620px;
 }
 
 .content .work .frames.transitioned .frame.active ~ .frame {
-    margin-left:-211px;
+    margin-left:-105px;
 }
 
 .content .work .frames .frame.active {
