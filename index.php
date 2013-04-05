@@ -82,6 +82,7 @@
             <? $images = glob($work->image_path . '*.jpg'); ?>
             <div class="work">
                 <div class="inner clearfix">
+                    <a class="visit launch" target="_blank" title="Launch Site" href="<?= $work->link ?>">Launch Site</a>
                     <div data-event="click" data-action="slider/gotoNext" class="right arrow"></div>
                     <div class="frames">
                         <div class="home frame active" data-event="click" data-action="slider/goto">
@@ -93,7 +94,13 @@
                         </div>
                         <div class="frame" data-event="click" data-action="slider/goto"><img src="<?= $work->image_path ?>2.jpg" /></div>
                         <? for($i=2;$i<count($images);$i++): ?>
-                        <div class="frame" data-event="click" data-action="slider/goto"><img rel="<?= $images[$i]; ?>" /></div>
+                        <div class="frame" data-event="click" data-action="slider/goto">
+                            <? if (strtolower($work->title) == "recite" && $i >= 2): ?>
+                                <img class="big-image" rel="<?= $images[$i]; ?>" />
+                            <? else: ?>
+                                <img rel="<?= $images[$i]; ?>" />
+                            <? endif; ?>
+                        </div>
                         <? endfor; ?>
                     </div>
                 </div>
@@ -141,12 +148,11 @@
                     <div>
                         <h2>Connect</h2>
                         <ul class="connect">
-                            <li><a class="twitter" title="Twitter" href="">Twitter</a></li>
                             <li><a class="linkedin" title="Linked In" href="">Linked In</a></li>
+                            <li><a class="twitter" title="Twitter" href="">Twitter</a></li>
                             <li><a class="facebook" title="Facebook" href="">Facebook</a></li>
                             <li><a class="piccsy" title="Piccsy" href="">Piccsy</a></li>
                             <li><a class="email" title="Email" href="">Email</a></li>
-                            <li><a class="phone" title="Phone" href="">Phone</a></li>
                         </ul>
                     </div>
                 </div>

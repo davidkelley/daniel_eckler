@@ -70,6 +70,20 @@ define(['jquery', 'module', 'helpers/binder'], function($, module, Binder) {
 	var tIDl = null, tIDe = null;
 
 	var binds = {
+		window: {
+			scroll: [
+				function() {
+					var st = $(window).scrollTop();
+
+					$(containers).each(function() {
+						if (st > $(this).offset().top + $(this).height()) {
+							m.goto($(this).children().first());
+						}
+					});
+				}
+			]
+		},
+
 		'.right.arrow': {
 			mouseenter: [
 				function() {
