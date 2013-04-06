@@ -11,7 +11,7 @@ define(['jquery', 'module', 'helpers/binder'], function($, module, Binder) {
 			this.goto(next);
 		},
 
-		goto: function(el) {
+		goto: function(el, force) {
 
 			//$ wrap
 			el = $(el);
@@ -19,7 +19,7 @@ define(['jquery', 'module', 'helpers/binder'], function($, module, Binder) {
 			var frame = el.parent();
 			var current = $('.active', frame);
 
-			if ( ! el.hasClass('active')) {
+			if ( ! el.hasClass('active') || ( force && el.hasClass('active') && el.hasClass('home')) ) {
 
 				if (el.nextAll('.active').length == 0) {
 					current.removeClass('active');
@@ -29,7 +29,7 @@ define(['jquery', 'module', 'helpers/binder'], function($, module, Binder) {
 					current.prev().addClass('active');
 					current.removeClass('active');
 				}
-			}
+			} 
 
 			var frames = frame.children();
 
@@ -64,7 +64,7 @@ define(['jquery', 'module', 'helpers/binder'], function($, module, Binder) {
 	};
 
 	$(containers).each(function() {
-		m.goto($(this).children('.active'));
+		m.goto($(this).children('.active'), false);
 	});
 
 	var tIDl = null, tIDe = null;
@@ -77,7 +77,7 @@ define(['jquery', 'module', 'helpers/binder'], function($, module, Binder) {
 
 					$(containers).each(function() {
 						if (st > $(this).offset().top + $(this).height()) {
-							m.goto($(this).children().first());
+							m.goto($(this).children().first(), false);
 						}
 					});
 				}

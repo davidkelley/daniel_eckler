@@ -33,6 +33,23 @@ requirejs.config({
     config: {
         slider: {
             selector: '.frames'
+        },
+
+        playground: {
+            selector: '#piccsy-playground',
+            links: [
+                'http://www.piccsy.com/everything-design',
+                'http://www.piccsy.com/everything-design',
+                'http://www.piccsy.com/everything-design',
+                'http://www.piccsy.com/everything-design',
+                'http://www.piccsy.com/history-of-art-100-words',
+                'http://www.piccsy.com/history-of-art-100-words',
+                'http://www.piccsy.com/1000-images-you-need-to-see-before-you-die',
+                'http://www.piccsy.com/1000-images-you-need-to-see-before-you-die',
+                'http://www.piccsy.com/1000-images-you-need-to-see-before-you-die',
+                'http://www.piccsy.com/404ward',
+                'http://www.piccsy.com/luvnotes'
+            ]
         }
 	},
     
@@ -116,6 +133,9 @@ require(['helpers/binder','jquery', 'helpers/handler'], function(Binder, $, hand
         }
     })
 });
+
+//load playground module
+require(['playground']);
 
 /**
  * Perform post-initialisation DOM manipulations

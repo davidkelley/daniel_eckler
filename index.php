@@ -5,6 +5,10 @@
     } else {
         die("Could not load data.");
     }
+
+    function keyify($title) {
+        return str_replace(' ','-',strtolower($title));
+    }
 ?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
@@ -67,7 +71,7 @@
         <a name="home"></a>
         <div class="torso top table">
             <div class="cell">
-                <h1>Hi, I'm <a rel="author" target="_blank" href="http://plus.google.com/116682852560364971555/about?rel=author">Daniel</a>.</h1>
+                <h1><a class="connect slide-to" href="#connect">Hi, I'm Daniel.</a></h1>
                 <h4>I'm an Interactive Strategist<br/>specializing in digital product development,<br/>
                     creative direction and marketing.</h4>
             </div>
@@ -77,10 +81,9 @@
         <a name="work"></a>
         <div class="content">
 
-            <? $n = 0; ?>
             <? foreach($xml->work as $work): ?>
             <? $images = glob($work->image_path . '*.jpg'); ?>
-            <div class="work">
+            <div id="<?= keyify($work->title); ?>" class="work">
                 <div class="inner clearfix">
                     <a class="visit launch" target="_blank" title="Launch Site" href="<?= $work->link ?>">Launch Site</a>
                     <div data-event="click" data-action="slider/gotoNext" class="right arrow"></div>
@@ -90,7 +93,7 @@
                             <img class="home-image" src="<?= $work->image_path ?>1.jpg" />
                             <p><?= nl2br($work->description) ?></p>
                             <p class="tags"><?= $work->keywords ?></p>
-                            <a class="visit" target="_blank" title="Launch Site" href="<?= $work->link ?>">Launch Site</a>
+                            <a class="static visit" target="_blank" title="Launch Site" href="<?= $work->link ?>">Launch Site</a>
                         </div>
                         <div class="frame" data-event="click" data-action="slider/goto"><img src="<?= $work->image_path ?>2.jpg" /></div>
                         <? for($i=2;$i<count($images);$i++): ?>
@@ -105,8 +108,6 @@
                     </div>
                 </div>
             </div>
-            <? $n++; ?>
-            <? if ($n > 4) break; ?>
             <? endforeach; ?>
 
 
@@ -119,7 +120,7 @@
                     <div>
                         <h2>Biography</h2>
                         <p>
-                            Hi, I'm Daniel. I'm a serial entrepreneur and interactive strategist, specializing in digital product development, creative direction, editorial direction, and marketing.
+                            <a rel="author" target="_blank" href="http://plus.google.com/116682852560364971555/about?rel=author">Hi, I'm Daniel</a>. I'm a serial entrepreneur and interactive strategist, specializing in digital product development, creative direction, editorial direction, and marketing.
                         </p>
                         <p>
                             I've founded companies including Piccsy (an image discovery platform for creatives), EveryGuyed (a men's life/style blog network), and Moxy Creative (a boutique design agency).
@@ -148,11 +149,11 @@
                     <div>
                         <h2>Connect</h2>
                         <ul class="connect">
-                            <li><a class="linkedin" title="Linked In" href="">Linked In</a></li>
-                            <li><a class="twitter" title="Twitter" href="">Twitter</a></li>
-                            <li><a class="facebook" title="Facebook" href="">Facebook</a></li>
-                            <li><a class="piccsy" title="Piccsy" href="">Piccsy</a></li>
-                            <li><a class="email" title="Email" href="">Email</a></li>
+                            <li><a target="_blank" class="linkedin" title="Linked In" href="http://www.linkedin.com/profile/view?id=71398790">Linked In</a></li>
+                            <li><a target="_blank" class="twitter" title="Twitter" href="http://www.twitter.com/piccsydaniel">Twitter</a></li>
+                            <li><a target="_blank" class="facebook" title="Facebook" href="http://www.facebook.com/daniel.eckler">Facebook</a></li>
+                            <li><a target="_blank" class="piccsy" title="Piccsy" href="http://danieleckler.piccsy.com">Piccsy</a></li>
+                            <li><a target="_blank" class="email" title="Email" href="mailto:daniel@piccsy.com">Email</a></li>
                         </ul>
                     </div>
                 </div>
