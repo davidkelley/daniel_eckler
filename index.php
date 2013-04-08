@@ -82,7 +82,7 @@
         <div class="content">
 
             <? foreach($xml->work as $work): ?>
-            <? $images = glob($work->image_path . '*.jpg'); ?>
+            <? $images = count(glob($work->image_path . '*.jpg')); ?>
             <div id="<?= keyify($work->title); ?>" class="work">
                 <div class="inner clearfix">
                     <a class="visit launch" target="_blank" title="Launch Site" href="<?= $work->link ?>">Launch Site</a>
@@ -92,16 +92,16 @@
                             <h2><?= $work->title; ?></h2>
                             <img class="home-image" src="<?= $work->image_path ?>1.jpg" />
                             <p><?= nl2br($work->description) ?></p>
-                            <p class="tags"><?= $work->keywords ?></p>
+                            <p class="tags"><?= nl2br($work->keywords) ?></p>
                             <a class="static visit" target="_blank" title="Launch Site" href="<?= $work->link ?>">Launch Site</a>
                         </div>
                         <div class="frame" data-event="click" data-action="slider/goto"><img src="<?= $work->image_path ?>2.jpg" /></div>
-                        <? for($i=2;$i<count($images);$i++): ?>
+                        <? for($i=3;$i<$images;$i++): ?>
                         <div class="frame" data-event="click" data-action="slider/goto">
-                            <? if (strtolower($work->title) == "recite" && $i >= 2): ?>
-                                <img class="big-image" rel="<?= $images[$i]; ?>" />
+                            <? if (strtolower($work->title) == "recite" && $i >= 3): ?>
+                                <img class="big-image" rel="<?= $work->image_path . $i .'.jpg' ?>" />
                             <? else: ?>
-                                <img rel="<?= $images[$i]; ?>" />
+                                <img rel="<?= $work->image_path . $i .'.jpg' ?>" />
                             <? endif; ?>
                         </div>
                         <? endfor; ?>
@@ -135,13 +135,13 @@
                         <ul>
                             <li><a target="_blank" title="Wall Street Journal" href="http://online.wsj.com/article/SB10000872396390443720204578004953091338258.html">Wall Street Journal</a></li>
                             <li><a target="_blank" title="Business Insider" href="http://www.businessinsider.com/pinterest-referral-traffic-chart-2012-2">Business Insider</a></li>
-                            <li>Vanity Fair</li>
                             <li><a target="_blank" title="TechCrunch" href="http://techcrunch.com/2012/05/28/death-to-powerpoint-piccsy-rethinks-the-pitchdeck-gets-tons-of-pageviews/">TechCrunch</a></li>
                             <li><a target="_blank" title="GQ" href="http://www.gq.com/style/blogs/the-gq-eye/2010/10/check-out-dress-the-part-movie-prints.html">GQ</a></li>
                             <li><a target="_blank" title="Spike" href="http://www.spike.com/articles/0i2to7/hip-hop-stars-get-simpsonized">Spike</a></li>
                             <li><a target="_blank" title="MTV" href="http://newsroom.mtv.com/2009/09/10/kanye-west-lil-wayne-eminem-the-simpsons/">MTV</a></li>
                             <li><a target="_blank" title="MISC" href="http://www.danieleckler.com/misc-daniel-eckler.jpg">MISC</a></li>
-                            <li>Computer Arts</li>
+                            <li><a target="_blank" title="AdWeek" href="http://www.adweek.com/adfreak/steve-jobs-memorial-site-designed-style-original-mac-os-interface-148392">AdWeek</a></li>
+                            <li><a target="_blank" title="Engadget" href="http://de.engadget.com/2013/04/05/rememberum-das-leben-des-steve-jobs-im-mac-os-design-nacherzahl">Engadget</a></li>
                             <li><a target="_blank" title="National Post" href="http://www.danieleckler.com/financial-post-daniel-eckler.jpg">National Post</a></li>
                             <li><a target="_blank" title="Toronto Star" href="http://www.starbusinessclub.ca/money/articles-money/monetizing-the-web-torontos-piccsy-and-making-money-off-free-images/">Toronto Star</a></li>
                         </ul>

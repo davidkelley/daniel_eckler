@@ -169,7 +169,7 @@ header {
     position:fixed;
     top:20px;
     left:50%;
-    margin-left: 570px;
+    margin-left: 540px;
     z-index:10000;
 }
 
@@ -320,7 +320,7 @@ h2:after {
     top: 50%;
     left: 50%;
     z-index: 10;
-    margin-left: 520px;
+    margin-left: 540px;
     padding-right:70px;
     cursor:pointer;
     margin-top: -25px;
@@ -339,7 +339,7 @@ h2:after {
 }
 
 .content .work .inner .right.arrow:hover {
-    margin-left:420px;
+    margin-left:440px;
     padding-right:100px;
 }
 
@@ -435,20 +435,16 @@ h2:after {
 }
 
 .content .work .frames {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
+    position:relative;
     height:100%;
     overflow:hidden;
 }
 
 .content .work .frames .frame {
     position:absolute;
-    width:678px;
     height:100%;
     margin-left:0px;
-    top:9%;
+    top:0;
     left:100%;
     cursor:pointer;
     -webkit-box-sizing:border-box;
@@ -473,26 +469,24 @@ h2:after {
 
 html .content .work .frames .home.frame {
     width:1100px;
-    top:0;
     padding:70px 40px;
     margin-left:-550px;
+}
+
+.content .work .frames .home.frame ~ .frame {
+    top:50%;
+}
+
+.content .work .frames.first .home.frame ~ .frame {
+    margin-left:0px !important;
 }
 
 .content .work .frames.transitioned .home.frame {
     margin-left:-950px;
 }
 
-.content .work .frames.transitioned .frame {
-    margin-left:-611px;
-}
-
-.content .work .frames.transitioned .frame.active ~ .frame {
-    margin-left:-105px;
-}
-
 .content .work .frames .frame.active {
     left:50%;
-    margin-left:-353px;
     cursor:default !important;
     z-index:5;
 }
@@ -507,6 +501,7 @@ html .content .work .frames .home.frame {
 }
 
 .content .work .inner .right.arrow:hover + .frames .frame.active + .frame {
+    margin-left:0px !important;
     left:90% !important;
     opacity:1;
     z-index:6;

@@ -48,7 +48,7 @@ The deck got significant online attention--most notably from Techcrunch who anno
 		<description><![CDATA[
 			Rememberum empowers people to seamlessly create beautiful, permanent online memorials to celebrate their loved ones. Memorials are shared with friends and family, who can in-turn share memories, photos, and videos to help create a lasting legacy that can be updated at any time.
 
-We launched the produce with a microsite tribute to Steve Jobs, designed in the classic Mac OS GUI. 
+We launched the product with a microsite tribute to Steve Jobs, designed in the classic Mac OS GUI. 
 		]]></description>
 		<keywords>// Product Development // Creative Direction // Marketing</keywords>
 		<link>http://www.rememberum.com</link>
@@ -61,7 +61,8 @@ We launched the produce with a microsite tribute to Steve Jobs, designed in the 
 
 In addition to the websites & promotional materials, we also produced a t-shirt collection, plush toy mascot, and event series.
 		]]></description>
-		<keywords>// Brand Development // Editorial Direction // Creative Direction </keywords>
+		<keywords><![CDATA[// Brand Development // Editorial Direction 
+			// Creative Direction ]]></keywords>
 		<link>http://www.everyguyed.com</link>
 	</work>
 	<work>
@@ -70,7 +71,8 @@ In addition to the websites & promotional materials, we also produced a t-shirt 
 		<description><![CDATA[
 			Revolver is a men's lifestyle website, curating the best videos from across the web for men with discerning taste in culture. 
 		]]></description>
-		<keywords>// Brand Development // Editorial Direction // Creative Direction</keywords>
+		<keywords><![CDATA[// Brand Development // Editorial Direction 
+			// Creative Direction ]]></keywords>
 		<link>http://www.gorevolver.com</link>
 	</work>
 	<work>
@@ -107,10 +109,10 @@ Winner of Start Up Weekend Toronto 2011.
 		<link>http://www.vizualize.me</link>
 	</work>
 	<work>
-		<title>Torso: T-Shirt Graphics Exposed</title>
+		<title>Torso</title>
 		<image_path>images/work/torso/</image_path>
 		<description><![CDATA[
-			Torso is a coffee table booked--published by Gestalten--that features the world's most interesting graphic t-shirts.
+			Torso: T-Shirt Graphics Exposed is a coffee table booked--published by Gestalten--that features the world's most interesting graphic t-shirts.
 
 Available for purchase on Amazon.
 		]]></description>

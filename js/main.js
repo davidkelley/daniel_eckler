@@ -41,7 +41,6 @@ requirejs.config({
                 'http://www.piccsy.com/everything-design',
                 'http://www.piccsy.com/everything-design',
                 'http://www.piccsy.com/everything-design',
-                'http://www.piccsy.com/everything-design',
                 'http://www.piccsy.com/history-of-art-100-words',
                 'http://www.piccsy.com/history-of-art-100-words',
                 'http://www.piccsy.com/1000-images-you-need-to-see-before-you-die',
@@ -49,6 +48,20 @@ requirejs.config({
                 'http://www.piccsy.com/1000-images-you-need-to-see-before-you-die',
                 'http://www.piccsy.com/404ward',
                 'http://www.piccsy.com/luvnotes'
+            ]
+        },
+
+        jobs: {
+            selector: '#rememberum',
+            links: [
+                'http://www.rememberum.com/steve-jobs-tribute',
+                'http://www.rememberum.com/steve-jobs-tribute',
+                'http://www.rememberum.com/steve-jobs-tribute',
+                'http://www.rememberum.com/',
+                'http://www.rememberum.com/',
+                'http://www.rememberum.com/',
+                'http://www.rememberum.com/',
+                'http://www.rememberum.com/'
             ]
         }
 	},
@@ -135,7 +148,7 @@ require(['helpers/binder','jquery', 'helpers/handler'], function(Binder, $, hand
 });
 
 //load playground module
-require(['playground']);
+require(['playground', 'jobs']);
 
 /**
  * Perform post-initialisation DOM manipulations

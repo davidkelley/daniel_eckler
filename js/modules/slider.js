@@ -16,51 +16,65 @@ define(['jquery', 'module', 'helpers/binder'], function($, module, Binder) {
 			//$ wrap
 			el = $(el);
 
+			var that = this;
+
 			var frame = el.parent();
 			var current = $('.active', frame);
 
 			if ( ! el.hasClass('active') || ( force && el.hasClass('active') && el.hasClass('home')) ) {
 
 				if (el.nextAll('.active').length == 0) {
-					current.removeClass('active');
 					current.next().addClass('active');
-
 				} else {
 					current.prev().addClass('active');
-					current.removeClass('active');
 				}
+
+				current.removeClass('active');//.removeAttr('style');
 			} 
 
 			var frames = frame.children();
 
 			if ( ! $(frames).first().hasClass('active')) {
-				$(frame).addClass('transitioned').removeClass('tease');
+				$(frame).addClass('transitioned').removeClass('first tease');
 				$(frame).parent().addClass('transitioned');
 			} else {
-				$(frame).removeClass('transitioned');
+				$(frame).removeClass('transitioned').addClass('first');;
 				$(frame).parent().removeClass('transitioned');
 			}
 
-			frames.each(this.each);
-		},
-
-		each: function(i) {
-
-			var frames = $(this).parent().children();
-			var a;
+			var n;
 
 			frames.each(function(i) {
 				if ($(this).hasClass('active')) {
-					a = i;
+					n = i;
 					return false;
 				}
 			});
-			
-			//var left = -(50 - (50 * a)) + 50 * i;
-			var left = 50 * i + 50 - 50 * a;
 
-			$(this).css({left:left + '%'});
-		}
+			frames.each(function(i) {
+				if ( ! $(this).hasClass('home')) {
+					if (i < n) {
+						that.adjust(this, 1.25);
+						console.log(1);
+					} else if (i == n) {
+						that.adjust(this, 2);
+						console.log(2);
+					} else {
+						that.adjust(this, 5);
+						console.log(3);
+					}
+				}
+
+				var left = 50 * i + 50 - 50 * n;
+				$(this).css({left:left + '%'});
+			});
+		},
+
+		adjust: function(el, m) {
+			var w = $('img', el).width();
+			var h = $('img', el).height();
+			$(el).css({marginLeft:-Math.floor(w / m), marginTop:-Math.floor(h / 2)});
+		},
 	};
 
 	$(containers).each(function() {
