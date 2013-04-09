@@ -579,6 +579,10 @@ html .content .work .frames .home.frame {
     *zoom: 1;
 }
 
+#bio-mobile {
+    display:none;
+}
+
 @media only screen and (max-width: 35em) {
 
     html, body {
@@ -586,6 +590,7 @@ html .content .work .frames .home.frame {
     }
 
     header,
+    #bio-first,
     .content .work .launch,
     .content .work .inner .frames .home.frame ~ .frame,
     .content .work .right.arrow,
@@ -658,6 +663,10 @@ html .content .work .frames .home.frame {
     .block-group.by-3 > div {
         width:100%;
         padding:20px;
+    }
+
+    #bio-mobile {
+        display:block;
     }
 
     #connect-features {
