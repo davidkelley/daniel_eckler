@@ -96,7 +96,7 @@
                             <a class="static visit" target="_blank" title="Launch Site" href="<?= $work->link ?>">Launch Site</a>
                         </div>
                         <div class="frame" data-event="click" data-action="slider/goto"><img src="<?= $work->image_path ?>2.jpg" /></div>
-                        <? for($i=3;$i<$images;$i++): ?>
+                        <? for($i=3;$i<=$images;$i++): ?>
                         <div class="frame" data-event="click" data-action="slider/goto">
                             <? if (strtolower($work->title) == "recite" && $i >= 3): ?>
                                 <img class="big-image" rel="<?= $work->image_path . $i .'.jpg' ?>" />
@@ -130,7 +130,7 @@
                         </p>
 
                     </div>
-                    <div>
+                    <div id="connect-features">
                         <h2>Features</h2>
                         <ul>
                             <li><a target="_blank" title="Wall Street Journal" href="http://online.wsj.com/article/SB10000872396390443720204578004953091338258.html">Wall Street Journal</a></li>

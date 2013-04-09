@@ -509,7 +509,7 @@ html .content .work .frames .home.frame {
 
 .content .work .inner .launch {
     position:absolute;
-    bottom:15px;
+    bottom:35px;
     left:50%;
     margin-left:-47px;
     opacity:0; 
@@ -579,8 +579,90 @@ html .content .work .frames .home.frame {
     *zoom: 1;
 }
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (max-width: 35em) {
+
+    html, body {
+        overflow-x:hidden;
+    }
+
+    header,
+    .content .work .launch,
+    .content .work .inner .frames .home.frame ~ .frame,
+    .content .work .right.arrow,
+    .content .work a.visit {
+        display:none !important;
+    }
+
+    h1 {
+        font-size:30pt;
+    }
+
+    .wrapper {
+        width:100%;
+    }
+
+    .torso.top h4 {
+        font-size:13pt;
+        padding-bottom:30px;
+    }
+
+    .torso.top .cell {
+        vertical-align:bottom;
+    }
+
+    .torso.top {
+        height:70%;
+        margin-top:20px;
+        background-size:cover;
+        background-position:top center;
+    }
+
+    .torso.bottom {
+        background:none;
+        height:auto;
+    }
+
+    .content .work {
+        height:auto;
+    }
+
+    html .content .work .frames .home.frame {
+        width:100%;
+        position:relative !important;
+        left:0 !important;
+        margin-left:0 !important;
+        padding:20px;
+    }
+
+    .content .work .home-image {
+        float:none;
+        margin:auto;
+        width:100%;
+        height:auto;
+    }
+
+    .content .work p {
+        width:100%;
+    }
+
+    .content .work p.tags {
+        margin-bottom:0;
+    }
+
+    h2 {
+        padding-bottom: 20px !important;
+        margin-bottom: 20px !important;
+        font-size: 30pt !important;
+    }
+
+    .block-group.by-3 > div {
+        width:100%;
+        padding:20px;
+    }
+
+    #connect-features {
+        display:none;
+    }
 }
 
 @media print,

@@ -13,6 +13,8 @@ define(['jquery', 'module', 'helpers/binder'], function($, module, Binder) {
 
 		goto: function(el, force) {
 
+			if (document.width <= 560) return;
+
 			//$ wrap
 			el = $(el);
 
@@ -55,13 +57,10 @@ define(['jquery', 'module', 'helpers/binder'], function($, module, Binder) {
 				if ( ! $(this).hasClass('home')) {
 					if (i < n) {
 						that.adjust(this, 1.25);
-						console.log(1);
 					} else if (i == n) {
 						that.adjust(this, 2);
-						console.log(2);
 					} else {
 						that.adjust(this, 5);
-						console.log(3);
 					}
 				}
 
