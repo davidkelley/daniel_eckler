@@ -587,7 +587,7 @@ html .content .work .frames .home.frame {
     display:none;
 }
 
-@media only screen and (max-width: 35em) {
+@media only screen and (orientation: portrait) {
 
     html, body {
         overflow-x:hidden;
@@ -670,11 +670,24 @@ html .content .work .frames .home.frame {
 
     .block-group.by-3 > div {
         width:100%;
-        padding:20px;
+        padding-top:0px;
+    }
+
+    .block-group.by-3 > div:first-child {
+        padding-top:20px;
+    }
+
+    .block-group.by-3 > div:last-child {
+        padding-bottom:20px;
     }
 
     #connect-features {
         display:none;
+    }
+
+    footer {
+        padding-left:40px;
+        padding-right:40px;
     }
 }
 
