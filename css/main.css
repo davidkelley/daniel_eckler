@@ -509,7 +509,7 @@ html .content .work .frames .home.frame {
 
 .content .work .inner .launch {
     position:absolute;
-    bottom:35px;
+    bottom:15px;
     left:50%;
     margin-left:-47px;
     opacity:0; 
@@ -583,6 +583,10 @@ html .content .work .frames .home.frame {
     display:none;
 }
 
+.show-on-mobile {
+    display:none;
+}
+
 @media only screen and (max-width: 35em) {
 
     html, body {
@@ -590,7 +594,7 @@ html .content .work .frames .home.frame {
     }
 
     header,
-    #bio-first,
+    .hide-on-mobile,
     .content .work .launch,
     .content .work .inner .frames .home.frame ~ .frame,
     .content .work .right.arrow,
@@ -600,6 +604,10 @@ html .content .work .frames .home.frame {
 
     h1 {
         font-size:30pt;
+    }
+
+    .show-on-mobile {
+        display:block;
     }
 
     .wrapper {
@@ -663,10 +671,6 @@ html .content .work .frames .home.frame {
     .block-group.by-3 > div {
         width:100%;
         padding:20px;
-    }
-
-    #bio-mobile {
-        display:block;
     }
 
     #connect-features {

@@ -119,14 +119,14 @@
                 <div class="wrapper block-group by-3">
                     <div>
                         <h2>Biography</h2>
-                        <p id="bio-first">
+                        <p class="hide-on-mobile">
                             <a rel="author" target="_blank" href="http://plus.google.com/116682852560364971555/about?rel=author">Hi, I'm Daniel</a>. I'm a serial entrepreneur and interactive strategist, specializing in digital product development, creative direction, editorial direction, and marketing.
                         </p>
                         <p>
                             I've founded companies including Piccsy (an image discovery platform for creatives), EveryGuyed (a men's life/style blog network), and Moxy Creative (a boutique design agency).
                         </p>
-                        <p id="bio-mobile">
-                            To see some of my work, please visit <a href="http://www.danieleckler.com" target="_blank">http://www.danieleckler.com</a> on your computer or tablet.
+                        <p class="show-on-mobile">
+                            To see all of my work, please visit <a href="http://www.danieleckler.com" target="_blank">http://www.danieleckler.com</a> on your computer or tablet.
                         </p>
                         <p>
                             I'm currently working on Rememberum, a tool that empowers people to remember their loved ones with beautiful, dynamic online memorials. Please contact me via e-mail with ideas, opportunities, or anything else you'd like to discuss.
