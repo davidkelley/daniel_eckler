@@ -76,8 +76,6 @@ define(['jquery', 'module', 'helpers/binder'], function($, module, Binder) {
 			//fallback for unloaded images
 			h = h > 0 ? h : 600;
 
-			console.log(h);
-
 			$(el).css({marginLeft:-Math.floor(w / m), marginTop:-Math.floor(h / 2)});
 		},
 	};

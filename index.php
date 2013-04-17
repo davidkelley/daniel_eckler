@@ -134,17 +134,19 @@
 
                     </div>
                     <div id="connect-features">
-                        <h2>Features</h2>
+                        <h2>Press</h2>
                         <ul>
                             <li><a target="_blank" title="Wall Street Journal" href="http://online.wsj.com/article/SB10000872396390443720204578004953091338258.html">Wall Street Journal</a></li>
                             <li><a target="_blank" title="Business Insider" href="http://www.businessinsider.com/pinterest-referral-traffic-chart-2012-2">Business Insider</a></li>
                             <li><a target="_blank" title="TechCrunch" href="http://techcrunch.com/2012/05/28/death-to-powerpoint-piccsy-rethinks-the-pitchdeck-gets-tons-of-pageviews/">TechCrunch</a></li>
+                            <li><a target="_blank" title="Engadget" href="http://de.engadget.com/2013/04/05/rememberum-das-leben-des-steve-jobs-im-mac-os-design-nacherzahl">Engadget</a></li>
                             <li><a target="_blank" title="GQ" href="http://www.gq.com/style/blogs/the-gq-eye/2010/10/check-out-dress-the-part-movie-prints.html">GQ</a></li>
                             <li><a target="_blank" title="Spike" href="http://www.spike.com/articles/0i2to7/hip-hop-stars-get-simpsonized">Spike</a></li>
                             <li><a target="_blank" title="MTV" href="http://newsroom.mtv.com/2009/09/10/kanye-west-lil-wayne-eminem-the-simpsons/">MTV</a></li>
+                            <li><a target="_blank" title="FastCoDesign" href="http://www.fastcodesign.com/1672344/the-life-of-steve-jobs-rendered-as-an-old-school-mac-desktop#1">FastCoDesign</a></li>
                             <li><a target="_blank" title="MISC" href="http://www.danieleckler.com/misc-daniel-eckler.jpg">MISC</a></li>
                             <li><a target="_blank" title="AdWeek" href="http://www.adweek.com/adfreak/steve-jobs-memorial-site-designed-style-original-mac-os-interface-148392">AdWeek</a></li>
-                            <li><a target="_blank" title="Engadget" href="http://de.engadget.com/2013/04/05/rememberum-das-leben-des-steve-jobs-im-mac-os-design-nacherzahl">Engadget</a></li>
+                            
                             <li><a target="_blank" title="National Post" href="http://www.danieleckler.com/financial-post-daniel-eckler.jpg">National Post</a></li>
                             <li><a target="_blank" title="Toronto Star" href="http://www.starbusinessclub.ca/money/articles-money/monetizing-the-web-torontos-piccsy-and-making-money-off-free-images/">Toronto Star</a></li>
                         </ul>
