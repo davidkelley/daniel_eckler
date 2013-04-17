@@ -71,15 +71,19 @@ define(['jquery', 'module', 'helpers/binder'], function($, module, Binder) {
 
 		adjust: function(el, m) {
 			var w = $('img', el).width();
-			var h = $('img', el).height() || 600;
+			var h = $('img', el).height();
+
+			//fallback for unloaded images
+			h = h > 0 ? h : 600;
+
+			console.log(h);
+
 			$(el).css({marginLeft:-Math.floor(w / m), marginTop:-Math.floor(h / 2)});
 		},
 	};
 
-	$(window).load(function() {
-		$(containers).each(function() {
-			m.goto($(this).children('.active'), false);
-		});
+	$(containers).each(function() {
+		m.goto($(this).children('.active'), false);
 	});
 
 	var tIDl = null, tIDe = null;

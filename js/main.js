@@ -91,6 +91,9 @@ requirejs.config({
 //init modernizr
 require(['components/modernizr']);
 
+//init slider
+require(['slider']);
+
 //init loading module
 require(['jquery'], function($) {
     $(window).load(function() {

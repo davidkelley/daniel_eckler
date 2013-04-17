@@ -475,6 +475,7 @@ html .content .work .frames .home.frame {
 
 .content .work .frames .home.frame ~ .frame {
     top:50%;
+    margin-top: -302px;
 }
 
 .content .work .frames.first .home.frame ~ .frame {
