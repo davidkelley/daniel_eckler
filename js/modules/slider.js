@@ -106,6 +106,7 @@ define(['jquery', 'module', 'helpers/binder'], function($, module, Binder) {
 				function() {
 					clearTimeout(tIDl);
 					var that = this;
+					$(this).removeClass('bounce');
 					tIDe = setTimeout(function() {
 						$(that).siblings('.frames').addClass('tease');
 					}, 100);

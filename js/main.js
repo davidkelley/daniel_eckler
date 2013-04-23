@@ -151,7 +151,7 @@ require(['helpers/binder','jquery', 'helpers/handler'], function(Binder, $, hand
 });
 
 //load playground module
-require(['playground', 'jobs']);
+require(['playground', 'jobs', 'bounce']);
 
 /**
  * Perform post-initialisation DOM manipulations

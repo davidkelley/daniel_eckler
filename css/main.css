@@ -324,12 +324,19 @@ h2:after {
     padding-right:70px;
     cursor:pointer;
     margin-top: -25px;
-    -webkit-transition: margin-left 1.2s, opacity 0.3s;
-    -moz-transition: margin-left 1.2s, opacity 0.3s;
-    -o-transition: margin-left 1.2s, opacity 0.3s;
-    -ms-transition: margin-left 1.2s, opacity 0.3s;
-    transition: margin-left 1.2s, opacity 0.3s;
+    -webkit-transition: margin-left 1.2s ease-in-out, opacity 0.3s;
+    -moz-transition: margin-left 1.2s ease-in-out, opacity 0.3s;
+    -o-transition: margin-left 1.2s ease-in-out, opacity 0.3s;
+    -ms-transition: margin-left 1.2s ease-in-out, opacity 0.3s;
+    transition: margin-left 1.2s ease-in-out, opacity 0.3s;
+}
 
+.right.arrow.bounce {
+    -webkit-animation: bounce 1s infinite;
+    -moz-animation: bounce 1s infinite;
+    -o-animation: bounce 1s infinite;
+    -ms-animation: bounce 1s infinite;
+    animation: bounce 1s infinite;
 }
 
 .content .work.over .inner .right.arrow,
@@ -341,6 +348,11 @@ h2:after {
 .content .work .inner .right.arrow:hover {
     margin-left:440px;
     padding-right:100px;
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
 }
 
 .content .work.loaded .inner {
@@ -586,6 +598,32 @@ html .content .work .frames .home.frame {
 
 .show-on-mobile {
     display:none;
+}
+
+@-webkit-keyframes bounce {
+  0%   { margin-left:540px; }
+  30% { margin-left:560px; }
+  100% { margin-left:540px; }
+}
+@-moz-keyframes bounce {
+  0%   { margin-left:540px; }
+  30% { margin-left:560px; }
+  100% { margin-left:540px; }
+}
+@-o-keyframes bounce {
+  0%   { margin-left:540px; }
+  30% { margin-left:560px; }
+  100% { margin-left:540px; }
+}
+@-ms-keyframes bounce {
+  0%   { margin-left:540px; }
+  30% { margin-left:560px; }
+  100% { margin-left:540px; }
+}
+@keyframes bounce {
+  0%   { margin-left:540px; }
+  30% { margin-left:560px; }
+  100% { margin-left:540px; }
 }
 
 @media only screen and (orientation: portrait) {
